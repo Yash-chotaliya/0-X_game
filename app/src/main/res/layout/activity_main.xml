@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="#000000">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3">
+
+        <Button
+            android:id="@+id/b1"
+            android:onClick="Click"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/cardview_light_background">
+        </Button>
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/cardview_light_background"
+            android:onClick="Click">
+        </Button>
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/cardview_light_background"
+            android:onClick="Click">
+        </Button>
+
+        <Button
+            android:id="@+id/b4"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/cardview_light_background"
+            android:onClick="Click">
+        </Button>
+
+        <Button
+            android:id="@+id/b5"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/cardview_light_background"
+            android:layout_marginLeft="25dp"
+            android:onClick="Click">
+        </Button>
+
+        <Button
+            android:id="@+id/b6"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/cardview_light_background"
+            android:layout_marginLeft="25dp"
+            android:onClick="Click">
+        </Button>
+
+        <Button
+            android:id="@+id/b7"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/cardview_light_background"
+            android:onClick="Click">
+        </Button>
+
+        <Button
+            android:id="@+id/b8"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/cardview_light_background"
+            android:layout_marginLeft="25dp"
+            android:onClick="Click">
+        </Button>
+
+        <Button
+            android:id="@+id/b9"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/cardview_light_background"
+            android:layout_marginLeft="25dp"
+            android:onClick="Click">
+        </Button>
+
+    </GridLayout>
+</LinearLayout>
