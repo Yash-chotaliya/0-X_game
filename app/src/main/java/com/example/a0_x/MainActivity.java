@@ -100,7 +100,13 @@ public class MainActivity extends AppCompatActivity {
                     setNull();
                 }
 
+                if(!s1.equals("") && !s2.equals("") && !s3.equals("") && !s4.equals("") && !s5.equals("") && !s6.equals("") && !s7.equals("") && !s8.equals("") && !s9.equals("")){
+                    Toast.makeText(this,"Tie",Toast.LENGTH_SHORT).show();
+                    setNull();
+                }
+
             }
+
         }
     }
 
