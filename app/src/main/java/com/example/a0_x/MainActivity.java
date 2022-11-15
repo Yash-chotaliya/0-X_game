@@ -3,15 +3,18 @@ package com.example.a0_x;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     Button b1,b2,b3,b4,b5,b6,b7,b8,b9;
     String s1,s2,s3,s4,s5,s6,s7,s8,s9;
+    TextView name1,name2;
     int set=0;
     int count=0;
     @SuppressLint("MissingInflatedId")
@@ -28,6 +31,14 @@ public class MainActivity extends AppCompatActivity {
         b7 = findViewById(R.id.b7);
         b8 = findViewById(R.id.b8);
         b9 = findViewById(R.id.b9);
+        name1 = findViewById(R.id.name1);
+        name2 = findViewById(R.id.name2);
+
+        Intent past = getIntent();
+        String x = past.getStringExtra("player1");
+        String y = past.getStringExtra("player2");
+        name1.setText(">>" + x + "<<");
+        name2.setText(">>" + y + "<<");
 
     }
 
