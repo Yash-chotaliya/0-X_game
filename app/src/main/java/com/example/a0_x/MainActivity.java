@@ -14,7 +14,9 @@ public class MainActivity extends AppCompatActivity {
 
     Button b1,b2,b3,b4,b5,b6,b7,b8,b9;
     String s1,s2,s3,s4,s5,s6,s7,s8,s9,x,y;
-    TextView name1,name2;
+    TextView name1,name2,score1,score2;
+    int p1=0;
+    int p2=0;
     int set=0;
     int count=0;
     @SuppressLint("MissingInflatedId")
@@ -33,12 +35,17 @@ public class MainActivity extends AppCompatActivity {
         b9 = findViewById(R.id.b9);
         name1 = findViewById(R.id.name1);
         name2 = findViewById(R.id.name2);
+        score1 = findViewById(R.id.score1);
+        score2 = findViewById(R.id.score2);
 
         Intent past = getIntent();
         x = past.getStringExtra("player1");
         y = past.getStringExtra("player2");
         name1.setText(">>" + x + "<<");
         name2.setText(">>" + y + "<<");
+
+        score1.setText(" "+p1);
+        score2.setText(" " +p2);
 
     }
 
@@ -67,36 +74,116 @@ public class MainActivity extends AppCompatActivity {
                 s9 = b9.getText().toString();
 
                 if(s1.equals(s2) && s2.equals(s3) && !s1.isEmpty()){
-                    Toast.makeText(this, "winner : " + s1, Toast.LENGTH_SHORT).show();
-                    setNull();
+                    if(count%2!=0){
+                        p1++;
+                        score1.setText(" " + p1);
+                        Toast.makeText(this,"winner : " + x, Toast.LENGTH_SHORT).show();
+                        setNull();
+                    }
+                    else{
+                        p2++;
+                        score2.setText(" " + p2);
+                        Toast.makeText(this,"winner : " + y, Toast.LENGTH_SHORT).show();
+                        setNull();
+                    }
                 }
                 else if(s4.equals(s5) && s5.equals(s6) && !s4.isEmpty()){
-                    Toast.makeText(this, "winner : " + s4, Toast.LENGTH_SHORT).show();
-                    setNull();
+                    if(count%2!=0){
+                        p1++;
+                        score1.setText(" " + p1);
+                        Toast.makeText(this,"winner : " + x, Toast.LENGTH_SHORT).show();
+                        setNull();
+                    }
+                    else{
+                        p2++;
+                        score2.setText(" " + p2);
+                        Toast.makeText(this,"winner : " + y, Toast.LENGTH_SHORT).show();
+                        setNull();
+                    }
                 }
                 else if(s7.equals(s8) && s8.equals(s9) && !s7.isEmpty()){
-                    Toast.makeText(this, "winner : " + s7, Toast.LENGTH_SHORT).show();
-                    setNull();
+                    if(count%2!=0){
+                        p1++;
+                        score1.setText(" " + p1);
+                        Toast.makeText(this,"winner : " + x, Toast.LENGTH_SHORT).show();
+                        setNull();
+                    }
+                    else{
+                        p2++;
+                        score2.setText(" " + p2);
+                        Toast.makeText(this,"winner : " + y, Toast.LENGTH_SHORT).show();
+                        setNull();
+                    }
                 }
                 else if(s1.equals(s4) && s4.equals(s7) && !s1.isEmpty()){
-                    Toast.makeText(this, "winner : " + s1, Toast.LENGTH_SHORT).show();
-                    setNull();
+                    if(count%2!=0){
+                        p1++;
+                        score1.setText(" " + p1);
+                        Toast.makeText(this,"winner : " + x, Toast.LENGTH_SHORT).show();
+                        setNull();
+                    }
+                    else{
+                        p2++;
+                        score2.setText(" " + p2);
+                        Toast.makeText(this,"winner : " + y, Toast.LENGTH_SHORT).show();
+                        setNull();
+                    }
                 }
                 else if(s2.equals(s5) && s5.equals(s8) && !s2.isEmpty()){
-                    Toast.makeText(this, "winner : " + s2, Toast.LENGTH_SHORT).show();
-                    setNull();
+                    if(count%2!=0){
+                        p1++;
+                        score1.setText(" " + p1);
+                        Toast.makeText(this,"winner : " + x, Toast.LENGTH_SHORT).show();
+                        setNull();
+                    }
+                    else{
+                        p2++;
+                        score2.setText(" " + p2);
+                        Toast.makeText(this,"winner : " + y, Toast.LENGTH_SHORT).show();
+                        setNull();
+                    }
                 }
                 else if(s3.equals(s6) && s6.equals(s9) && !s3.isEmpty()){
-                    Toast.makeText(this, "winner : " + s3, Toast.LENGTH_SHORT).show();
-                    setNull();
+                    if(count%2!=0){
+                        p1++;
+                        score1.setText(" " + p1);
+                        Toast.makeText(this,"winner : " + x, Toast.LENGTH_SHORT).show();
+                        setNull();
+                    }
+                    else{
+                        p2++;
+                        score2.setText(" " + p2);
+                        Toast.makeText(this,"winner : " + y, Toast.LENGTH_SHORT).show();
+                        setNull();
+                    }
                 }
                 else if(s1.equals(s5) && s5.equals(s9) && !s1.isEmpty()){
-                    Toast.makeText(this, "winner : " + s1, Toast.LENGTH_SHORT).show();
-                    setNull();
+                    if(count%2!=0){
+                        p1++;
+                        score1.setText(" " + p1);
+                        Toast.makeText(this,"winner : " + x, Toast.LENGTH_SHORT).show();
+                        setNull();
+                    }
+                    else{
+                        p2++;
+                        score2.setText(" " + p2);
+                        Toast.makeText(this,"winner : " + y, Toast.LENGTH_SHORT).show();
+                        setNull();
+                    }
                 }
                 else if(s3.equals(s5) && s5.equals(s7) && !s3.isEmpty()){
-                    Toast.makeText(this, "winner : " + s3, Toast.LENGTH_SHORT).show();
-                    setNull();
+                    if(count%2!=0){
+                        p1++;
+                        score1.setText(" " + p1);
+                        Toast.makeText(this,"winner : " + x, Toast.LENGTH_SHORT).show();
+                        setNull();
+                    }
+                    else{
+                        p2++;
+                        score2.setText(" " + p2);
+                        Toast.makeText(this,"winner : " + y, Toast.LENGTH_SHORT).show();
+                        setNull();
+                    }
                 }
 
                 if(!s1.equals("") && !s2.equals("") && !s3.equals("") && !s4.equals("") && !s5.equals("") && !s6.equals("") && !s7.equals("") && !s8.equals("") && !s9.equals("")){
