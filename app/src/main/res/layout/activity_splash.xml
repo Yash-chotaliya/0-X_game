@@ -8,18 +8,19 @@
     tools:context=".Splash">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="127dp"
+        android:id="@+id/img"
+        android:layout_width="123dp"
         android:layout_height="131dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.254"
+        app:layout_constraintVertical_bias="0.261"
         app:srcCompat="@drawable/splash_image" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv"
         android:layout_width="100dp"
         android:layout_height="30dp"
         android:layout_marginTop="5dp"
@@ -29,8 +30,8 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/img"
+        app:layout_constraintVertical_bias="0.012" />
 </androidx.constraintlayout.widget.ConstraintLayout>

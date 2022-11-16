@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     Button b1,b2,b3,b4,b5,b6,b7,b8,b9;
-    String s1,s2,s3,s4,s5,s6,s7,s8,s9;
+    String s1,s2,s3,s4,s5,s6,s7,s8,s9,x,y;
     TextView name1,name2;
     int set=0;
     int count=0;
@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
         name2 = findViewById(R.id.name2);
 
         Intent past = getIntent();
-        String x = past.getStringExtra("player1");
-        String y = past.getStringExtra("player2");
+        x = past.getStringExtra("player1");
+        y = past.getStringExtra("player2");
         name1.setText(">>" + x + "<<");
         name2.setText(">>" + y + "<<");
 
@@ -69,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
                 if(s1.equals(s2) && s2.equals(s3) && !s1.isEmpty()){
                     Toast.makeText(this, "winner : " + s1, Toast.LENGTH_SHORT).show();
                     setNull();
-
                 }
                 else if(s4.equals(s5) && s5.equals(s6) && !s4.isEmpty()){
                     Toast.makeText(this, "winner : " + s4, Toast.LENGTH_SHORT).show();
