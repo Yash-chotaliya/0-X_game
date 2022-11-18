@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
         Intent past = getIntent();
         x = past.getStringExtra("player1");
         y = past.getStringExtra("player2");
-        name1.setText(">>" + x + "<<");
-        name2.setText(">>" + y + "<<");
+        name1.setText("" + x);
+        name2.setText("" + y);
 
         score1.setText(" "+p1);
         score2.setText(" " +p2);
@@ -187,7 +187,6 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if(!s1.equals("") && !s2.equals("") && !s3.equals("") && !s4.equals("") && !s5.equals("") && !s6.equals("") && !s7.equals("") && !s8.equals("") && !s9.equals("")){
-                    Toast.makeText(this,"Tie",Toast.LENGTH_SHORT).show();
                     setNull();
                 }
 

@@ -7,31 +7,92 @@
     android:background="@color/black"
     tools:context=".Splash">
 
-    <ImageView
-        android:id="@+id/img"
-        android:layout_width="123dp"
-        android:layout_height="131dp"
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.261"
-        app:srcCompat="@drawable/splash_image" />
+        app:layout_constraintVertical_bias="0.5"
+        app:columnCount="3">
 
-    <TextView
-        android:id="@+id/tv"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="5dp"
-        android:gravity="center"
-        android:text="0 X"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.086"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img"
-        app:layout_constraintVertical_bias="0.012" />
+        <TextView
+            android:id="@+id/t2"
+            android:width="100dp"
+            android:height="70dp"
+            android:gravity="center"
+            android:text="X"
+            android:textColor="#00BCD4"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:width="100dp"
+            android:height="70dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#00BCD4"
+            android:textSize="50sp" />
+
+        <TextView
+            android:width="100dp"
+            android:height="70dp"
+            android:gravity="center"
+            android:textColor="#00BCD4"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/t1"
+            android:width="100dp"
+            android:height="70dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#00BCD4"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/t4"
+            android:width="100dp"
+            android:height="70dp"
+            android:gravity="center"
+            android:text="X"
+            android:textColor="#00BCD4"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/t5"
+            android:width="100dp"
+            android:height="70dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#00BCD4"
+            android:textSize="50sp" />
+
+        <TextView
+            android:width="100dp"
+            android:height="70dp"
+            android:gravity="center"
+            android:textColor="#00BCD4"
+            android:textSize="50sp" />
+
+        <TextView
+            android:width="100dp"
+            android:height="70dp"
+            android:gravity="center"
+            android:textColor="#00BCD4"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/t6"
+            android:width="100dp"
+            android:height="70dp"
+            android:gravity="center"
+            android:text="X"
+            android:textColor="#00BCD4"
+            android:textSize="50sp" />
+
+    </androidx.gridlayout.widget.GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -11,84 +11,140 @@
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:columnCount="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5">
+        app:layout_constraintVertical_bias="0.73">
 
         <Button
             android:id="@+id/b1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="25dp"
             android:backgroundTint="#00BCD4"
             android:onClick="Click"
-            android:textColor="@color/black"></Button>
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"></Button>
 
         <Button
             android:id="@+id/b2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
             android:backgroundTint="#00BCD4"
             android:onClick="Click"
-            android:textColor="@color/black"></Button>
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"></Button>
 
         <Button
             android:id="@+id/b3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
             android:backgroundTint="#00BCD4"
             android:onClick="Click"
-            android:textColor="@color/black"></Button>
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"></Button>
 
         <Button
             android:id="@+id/b4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="25dp"
             android:backgroundTint="#00BCD4"
             android:onClick="Click"
-            android:textColor="@color/black"></Button>
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"></Button>
 
         <Button
             android:id="@+id/b5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
             android:backgroundTint="#00BCD4"
             android:onClick="Click"
-            android:textColor="@color/black"></Button>
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"></Button>
 
         <Button
             android:id="@+id/b6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
             android:backgroundTint="#00BCD4"
             android:onClick="Click"
-            android:textColor="@color/black"></Button>
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"></Button>
 
         <Button
             android:id="@+id/b7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="25dp"
             android:backgroundTint="#00BCD4"
             android:onClick="Click"
-            android:textColor="@color/black"></Button>
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"></Button>
 
         <Button
             android:id="@+id/b8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
             android:backgroundTint="#00BCD4"
             android:onClick="Click"
-            android:textColor="@color/black"></Button>
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"></Button>
 
         <Button
             android:id="@+id/b9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
             android:backgroundTint="#00BCD4"
             android:onClick="Click"
-            android:textColor="@color/black"></Button>
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"></Button>
 
     </GridLayout>
 
     <TextView
         android:id="@+id/name1"
-        android:layout_width="150dp"
+        android:layout_width="170dp"
         android:layout_height="40dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="148dp"
         android:background="#000000"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="monospace"
         android:gravity="center"
         android:textColor="#00BCD4"
         android:textSize="25sp"
@@ -98,12 +154,12 @@
 
     <TextView
         android:id="@+id/name2"
-        android:layout_width="150dp"
+        android:layout_width="170dp"
         android:layout_height="40dp"
         android:layout_marginTop="148dp"
         android:layout_marginEnd="32dp"
         android:background="#000000"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="monospace"
         android:gravity="center"
         android:textColor="#00BCD4"
         android:textSize="25sp"
@@ -117,6 +173,7 @@
         android:layout_height="30dp"
         android:layout_marginStart="72dp"
         android:layout_marginTop="40dp"
+        android:fontFamily="serif-monospace"
         android:gravity="center"
         android:textColor="#00BCD4"
         app:layout_constraintStart_toStartOf="parent"
@@ -128,6 +185,7 @@
         android:layout_height="30dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="72dp"
+        android:fontFamily="serif-monospace"
         android:gravity="center"
         android:textColor="#00BCD4"
         app:layout_constraintEnd_toEndOf="parent"
