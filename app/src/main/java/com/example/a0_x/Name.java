@@ -1,8 +1,10 @@
 package com.example.a0_x;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +14,32 @@ import android.widget.EditText;
 public class Name extends AppCompatActivity {
     EditText p1,p2;
     Button button;
+
+    @Override
+    public void onBackPressed() {
+
+        AlertDialog.Builder exit  = new AlertDialog.Builder(this);
+
+        exit.setIcon(R.drawable.ic_baseline_exit_to_app_24);
+        exit.setTitle("EXIT");
+        exit.setMessage("are you sure about your decision ?");
+
+        exit.setPositiveButton("exit", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Name.super.onBackPressed();
+            }
+        });
+
+        exit.setNegativeButton("no", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+        exit.show();
+    }
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,5 +62,6 @@ public class Name extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }
