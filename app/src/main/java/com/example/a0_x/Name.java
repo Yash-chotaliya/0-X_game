@@ -12,34 +12,10 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class Name extends AppCompatActivity {
-    EditText p1,p2;
-    Button button;
+    private EditText p1,p2;
+    private Button button;
 
-    @Override
-    public void onBackPressed() {
 
-        AlertDialog.Builder exit  = new AlertDialog.Builder(this);
-        exit.setCancelable(false);
-
-        exit.setIcon(R.drawable.ic_baseline_exit_to_app_24);
-        exit.setTitle("EXIT");
-        exit.setMessage("are you sure about your decision ?");
-
-        exit.setPositiveButton("exit", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                Name.super.onBackPressed();
-            }
-        });
-
-        exit.setNegativeButton("no", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-
-            }
-        });
-        exit.show();
-    }
 
     @SuppressLint("MissingInflatedId")
     @Override

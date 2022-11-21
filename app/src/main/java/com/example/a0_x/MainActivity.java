@@ -12,13 +12,13 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button b1,b2,b3,b4,b5,b6,b7,b8,b9;
-    String s1,s2,s3,s4,s5,s6,s7,s8,s9,x,y;
-    TextView name1,name2,score1,score2;
-    int p1=0;
-    int p2=0;
-    int set=0;
-    int count=0;
+    private Button b1,b2,b3,b4,b5,b6,b7,b8,b9;
+    private String s1,s2,s3,s4,s5,s6,s7,s8,s9,x,y;
+    private TextView name1,name2,score1,score2;
+    private int p1=0;
+    private int p2=0;
+    private int set=0;
+    private int count=0;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
