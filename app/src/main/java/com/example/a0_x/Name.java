@@ -19,6 +19,7 @@ public class Name extends AppCompatActivity {
     public void onBackPressed() {
 
         AlertDialog.Builder exit  = new AlertDialog.Builder(this);
+        exit.setCancelable(false);
 
         exit.setIcon(R.drawable.ic_baseline_exit_to_app_24);
         exit.setTitle("EXIT");

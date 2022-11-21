@@ -11,7 +11,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 public class Splash extends AppCompatActivity {
-    TextView t1,t2,t3,t4,t5,t6;
+    TextView t1,t2,t3,t4,t5,t6,t7,t8,t9;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,25 +23,23 @@ public class Splash extends AppCompatActivity {
         t5 = findViewById(R.id.t5);
         t4 = findViewById(R.id.t4);
         t6 = findViewById(R.id.t6);
+        t7 = findViewById(R.id.t7);
+        t8 = findViewById(R.id.t8);
+        t9 = findViewById(R.id.t9);
 
         Animation animation = AnimationUtils.loadAnimation(this,R.anim.animat);
         Animation animation1 = AnimationUtils.loadAnimation(this,R.anim.animate1);
 
+        t2.setAnimation(animation1);
+        t4.setAnimation(animation1);
+        t6.setAnimation(animation1);
+        t8.setAnimation(animation1);
+
         t1.setAnimation(animation);
         t3.setAnimation(animation);
         t5.setAnimation(animation);
-        t2.setAnimation(animation);
-        t4.setAnimation(animation);
-        t6.setAnimation(animation);
-
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                t1.setAnimation(animation1);
-                t3.setAnimation(animation1);
-                t5.setAnimation(animation1);
-            }
-        },2000);
+        t7.setAnimation(animation);
+        t9.setAnimation(animation);
 
 
         new Handler().postDelayed(new Runnable() {
@@ -51,6 +49,6 @@ public class Splash extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        },4500);
+        },2500);
     }
 }

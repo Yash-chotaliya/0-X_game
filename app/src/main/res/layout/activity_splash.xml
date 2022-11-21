@@ -19,11 +19,20 @@
         app:columnCount="3">
 
         <TextView
-            android:id="@+id/t2"
+            android:id="@+id/t1"
             android:width="100dp"
             android:height="70dp"
             android:gravity="center"
             android:text="X"
+            android:textColor="#00BCD4"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:width="100dp"
+            android:height="70dp"
+            android:gravity="center"
+            android:text="0"
             android:textColor="#00BCD4"
             android:textSize="50sp" />
 
@@ -32,23 +41,7 @@
             android:width="100dp"
             android:height="70dp"
             android:gravity="center"
-            android:text="0"
-            android:textColor="#00BCD4"
-            android:textSize="50sp" />
-
-        <TextView
-            android:width="100dp"
-            android:height="70dp"
-            android:gravity="center"
-            android:textColor="#00BCD4"
-            android:textSize="50sp" />
-
-        <TextView
-            android:id="@+id/t1"
-            android:width="100dp"
-            android:height="70dp"
-            android:gravity="center"
-            android:text="0"
+            android:text="x"
             android:textColor="#00BCD4"
             android:textSize="50sp" />
 
@@ -57,7 +50,7 @@
             android:width="100dp"
             android:height="70dp"
             android:gravity="center"
-            android:text="X"
+            android:text="0"
             android:textColor="#00BCD4"
             android:textSize="50sp" />
 
@@ -66,26 +59,39 @@
             android:width="100dp"
             android:height="70dp"
             android:gravity="center"
-            android:text="0"
-            android:textColor="#00BCD4"
-            android:textSize="50sp" />
-
-        <TextView
-            android:width="100dp"
-            android:height="70dp"
-            android:gravity="center"
-            android:textColor="#00BCD4"
-            android:textSize="50sp" />
-
-        <TextView
-            android:width="100dp"
-            android:height="70dp"
-            android:gravity="center"
+            android:text="X"
             android:textColor="#00BCD4"
             android:textSize="50sp" />
 
         <TextView
             android:id="@+id/t6"
+            android:width="100dp"
+            android:height="70dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#00BCD4"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/t7"
+            android:width="100dp"
+            android:height="70dp"
+            android:gravity="center"
+            android:text="x"
+            android:textColor="#00BCD4"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/t8"
+            android:width="100dp"
+            android:height="70dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#00BCD4"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/t9"
             android:width="100dp"
             android:height="70dp"
             android:gravity="center"
