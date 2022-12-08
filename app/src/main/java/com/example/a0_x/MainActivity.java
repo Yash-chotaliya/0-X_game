@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         Intent past = getIntent();
         x = past.getStringExtra("player1");
         y = past.getStringExtra("player2");
+
         name1.setText("" + x);
         name2.setText("" + y);
 

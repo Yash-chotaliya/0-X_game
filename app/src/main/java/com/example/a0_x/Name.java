@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Name extends AppCompatActivity {
     private EditText p1,p2;
@@ -33,10 +34,15 @@ public class Name extends AppCompatActivity {
                 String player1 = p1.getText().toString();
                 String player2 = p2.getText().toString();
 
-                Intent intent = new Intent(Name.this, MainActivity.class);
-                intent.putExtra("player1",player1);
-                intent.putExtra("player2",player2);
-                startActivity(intent);
+                if(player1.isEmpty() || player2.isEmpty()){
+                    Toast.makeText(Name.this, "Enter Name Correctly", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Intent intent = new Intent(Name.this, MainActivity.class);
+                    intent.putExtra("player1",player1);
+                    intent.putExtra("player2",player2);
+                    startActivity(intent);
+                }
             }
         });
 
