@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#000000"
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".game_options">
@@ -14,8 +14,8 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="play"
-        android:backgroundTint="#000000"
-        android:textColor="#FFFFFF" />
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#000000" />
 
     <Button
         android:id="@+id/contactus"
@@ -23,6 +23,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="contact us"
-        android:backgroundTint="@color/black"
-        android:textColor="#F8F8F8" />
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#000000" />
 </LinearLayout>

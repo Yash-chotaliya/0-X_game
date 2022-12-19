@@ -17,7 +17,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class register_page extends AppCompatActivity {
-    private Button register;
+    private Button register,login;
     private EditText user,password,cpassword;
     private FirebaseAuth auth;
 
@@ -28,10 +28,19 @@ public class register_page extends AppCompatActivity {
         setContentView(R.layout.activity_register_page);
 
         register = findViewById(R.id.register);
+        login = findViewById(R.id.login);
         user = findViewById(R.id.user);
         password = findViewById(R.id.password);
         cpassword = findViewById(R.id.cpassword);
         auth = FirebaseAuth.getInstance();
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(register_page.this,login_page.class));
+                finish();
+            }
+        });
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override

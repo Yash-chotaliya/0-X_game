@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#000000"
     tools:context=".Splash">
 
     <androidx.gridlayout.widget.GridLayout
@@ -25,7 +25,7 @@
             android:fontFamily="casual"
             android:gravity="center"
             android:text="X"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="70sp" />
 
         <TextView
@@ -35,7 +35,7 @@
             android:fontFamily="casual"
             android:gravity="center"
             android:text="0"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="50sp" />
 
         <TextView
@@ -45,7 +45,7 @@
             android:fontFamily="casual"
             android:gravity="center"
             android:text="x"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="40sp" />
 
         <TextView
@@ -55,7 +55,7 @@
             android:fontFamily="casual"
             android:gravity="center"
             android:text="0"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="50sp" />
 
         <TextView
@@ -65,7 +65,7 @@
             android:fontFamily="casual"
             android:gravity="center"
             android:text="X"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="40sp" />
 
         <TextView
@@ -75,7 +75,7 @@
             android:fontFamily="casual"
             android:gravity="center"
             android:text="0"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="30sp" />
 
         <TextView
@@ -85,7 +85,7 @@
             android:fontFamily="casual"
             android:gravity="center"
             android:text="x"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="40sp" />
 
         <TextView
@@ -95,7 +95,7 @@
             android:fontFamily="casual"
             android:gravity="center"
             android:text="0"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="30sp" />
 
         <TextView
@@ -105,7 +105,7 @@
             android:fontFamily="casual"
             android:gravity="center"
             android:text="X"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
     </androidx.gridlayout.widget.GridLayout>
