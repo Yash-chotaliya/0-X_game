@@ -1,6 +1,6 @@
 # 0-X_game
 // register page
-![register](https://user-images.githubusercontent.com/96650011/208467406-0aa87f91-eeed-48fc-a765-eaa988c8cc68.jpg=250x250)
+![register](https://user-images.githubusercontent.com/96650011/208467406-0aa87f91-eeed-48fc-a765-eaa988c8cc68.jpg=250*250)
 
 //login page
 ![login](https://user-images.githubusercontent.com/96650011/208467477-1f155718-1499-42c3-bcc4-37415b5b7808.jpg)
