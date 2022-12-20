@@ -15,10 +15,11 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class register_page extends AppCompatActivity {
     private Button register,login;
-    private EditText user,password,cpassword;
+    private EditText email,password,cpassword,username;
     private FirebaseAuth auth;
 
     @SuppressLint("MissingInflatedId")
@@ -28,8 +29,9 @@ public class register_page extends AppCompatActivity {
         setContentView(R.layout.activity_register_page);
 
         register = findViewById(R.id.register);
+        username = findViewById(R.id.username);
         login = findViewById(R.id.login);
-        user = findViewById(R.id.user);
+        email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         cpassword = findViewById(R.id.cpassword);
         auth = FirebaseAuth.getInstance();
@@ -45,12 +47,14 @@ public class register_page extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String u = user.getText().toString();
+                String e = email.getText().toString();
                 String p = password.getText().toString();
                 String cp = cpassword.getText().toString();
+                String user = username.getText().toString();
 
-                if(!u.isEmpty() && !p.isEmpty() && cp.equals(p)){
-                    registeruser(u,p);
+                if(!e.isEmpty() && !p.isEmpty() && cp.equals(p) && !user.isEmpty()){
+                    FirebaseDatabase.getInstance().getReference().child("users").push().child("name").setValue(user);
+                    registeruser(e,p);
                 }
                 else{
                     Toast.makeText(register_page.this, "fill all details correctly", Toast.LENGTH_SHORT).show();
