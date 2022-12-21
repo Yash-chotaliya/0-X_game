@@ -1,8 +1,10 @@
 package com.example.a0_x;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +15,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private Button b1,b2,b3,b4,b5,b6,b7,b8,b9;
-    private String s1,s2,s3,s4,s5,s6,s7,s8,s9,x,y;
+    private String s1,s2,s3,s4,s5,s6,s7,s8,s9,x,y,goal;
     private TextView name1,name2,score1,score2;
     private int p1=0;
     private int p2=0;
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         Intent past = getIntent();
         x = past.getStringExtra("player1");
         y = past.getStringExtra("player2");
+        goal = past.getStringExtra("tar");
 
         name1.setText("" + x);
         name2.setText("" + y);
@@ -77,112 +80,165 @@ public class MainActivity extends AppCompatActivity {
                 if(s1.equals(s2) && s2.equals(s3) && !s1.isEmpty()){
                     if(count%2!=0){
                         p1++;
-                        score1.setText(" " + p1);
-                        Toast.makeText(this,"winner : " + x, Toast.LENGTH_SHORT).show();
-                        setNull();
+                        score1.setText("" + p1);
+                        if(goal.equals(score1.getText().toString())){
+                            winner(x);
+                        }
+                        else{
+                            setNull();
+                        }
+
                     }
                     else{
                         p2++;
-                        score2.setText(" " + p2);
-                        Toast.makeText(this,"winner : " + y, Toast.LENGTH_SHORT).show();
-                        setNull();
+                        score2.setText("" + p2);
+
+                        if(goal.equals(score2.getText().toString())){
+                            winner(y);
+                        }
+                        else{
+                            setNull();
+                        }
+
                     }
                 }
                 else if(s4.equals(s5) && s5.equals(s6) && !s4.isEmpty()){
                     if(count%2!=0){
                         p1++;
-                        score1.setText(" " + p1);
-                        Toast.makeText(this,"winner : " + x, Toast.LENGTH_SHORT).show();
+                        score1.setText("" + p1);
+
+                        if(goal.equals(score1.getText().toString())){
+                            winner(x);
+                        }
                         setNull();
                     }
                     else{
                         p2++;
-                        score2.setText(" " + p2);
-                        Toast.makeText(this,"winner : " + y, Toast.LENGTH_SHORT).show();
+                        score2.setText("" + p2);
+
+                        if(goal.equals(score2.getText().toString())){
+                            winner(y);
+                        }
                         setNull();
                     }
                 }
                 else if(s7.equals(s8) && s8.equals(s9) && !s7.isEmpty()){
                     if(count%2!=0){
                         p1++;
-                        score1.setText(" " + p1);
-                        Toast.makeText(this,"winner : " + x, Toast.LENGTH_SHORT).show();
+                        score1.setText("" + p1);
+
+                        if(goal.equals(score1.getText().toString())){
+                            winner(x);
+                        }
                         setNull();
                     }
                     else{
                         p2++;
-                        score2.setText(" " + p2);
-                        Toast.makeText(this,"winner : " + y, Toast.LENGTH_SHORT).show();
+                        score2.setText("" + p2);
+
+                        if(goal.equals(score2.getText().toString())){
+                            winner(y);
+                        }
                         setNull();
                     }
                 }
                 else if(s1.equals(s4) && s4.equals(s7) && !s1.isEmpty()){
                     if(count%2!=0){
                         p1++;
-                        score1.setText(" " + p1);
-                        Toast.makeText(this,"winner : " + x, Toast.LENGTH_SHORT).show();
+                        score1.setText("" + p1);
+
+                        if(goal.equals(score1.getText().toString())){
+                            winner(x);
+                        }
                         setNull();
                     }
                     else{
                         p2++;
-                        score2.setText(" " + p2);
-                        Toast.makeText(this,"winner : " + y, Toast.LENGTH_SHORT).show();
+                        score2.setText("" + p2);
+
+                        if(goal.equals(score2.getText().toString())){
+                            winner(y);
+                        }
                         setNull();
                     }
                 }
                 else if(s2.equals(s5) && s5.equals(s8) && !s2.isEmpty()){
                     if(count%2!=0){
                         p1++;
-                        score1.setText(" " + p1);
-                        Toast.makeText(this,"winner : " + x, Toast.LENGTH_SHORT).show();
+                        score1.setText("" + p1);
+
+                        if(goal.equals(score1.getText().toString())){
+                            winner(x);
+                        }
                         setNull();
                     }
                     else{
                         p2++;
-                        score2.setText(" " + p2);
-                        Toast.makeText(this,"winner : " + y, Toast.LENGTH_SHORT).show();
+                        score2.setText("" + p2);
+
+                        if(goal.equals(score2.getText().toString())){
+                            winner(y);
+                        }
                         setNull();
                     }
                 }
                 else if(s3.equals(s6) && s6.equals(s9) && !s3.isEmpty()){
                     if(count%2!=0){
                         p1++;
-                        score1.setText(" " + p1);
-                        Toast.makeText(this,"winner : " + x, Toast.LENGTH_SHORT).show();
+                        score1.setText("" + p1);
+
+                        if(goal.equals(score1.getText().toString())){
+                            winner(x);
+                        }
                         setNull();
                     }
                     else{
                         p2++;
-                        score2.setText(" " + p2);
-                        Toast.makeText(this,"winner : " + y, Toast.LENGTH_SHORT).show();
+                        score2.setText("" + p2);
+
+                        if(goal.equals(score2.getText().toString())){
+                            winner(y);
+                        }
                         setNull();
                     }
                 }
                 else if(s1.equals(s5) && s5.equals(s9) && !s1.isEmpty()){
                     if(count%2!=0){
                         p1++;
-                        score1.setText(" " + p1);
-                        Toast.makeText(this,"winner : " + x, Toast.LENGTH_SHORT).show();
+                        score1.setText("" + p1);
+
+                        if(goal.equals(score1.getText().toString())){
+                            winner(x);
+                        }
                         setNull();
                     }
                     else{
                         p2++;
-                        score2.setText(" " + p2);
-                        Toast.makeText(this,"winner : " + y, Toast.LENGTH_SHORT).show();
+                        score2.setText("" + p2);
+
+                        if(goal.equals(score2.getText().toString())){
+                            winner(y);
+                        }
                         setNull();
                     }
                 }
                 else if(s3.equals(s5) && s5.equals(s7) && !s3.isEmpty()){
                     if(count%2!=0){
                         p1++;
-                        score1.setText(" " + p1);
-                        Toast.makeText(this,"winner : " + x, Toast.LENGTH_SHORT).show();
+                        score1.setText("" + p1);
+
+                        if(goal.equals(score1.getText().toString())){
+                            winner(x);
+                        }
                         setNull();
                     }
                     else{
                         p2++;
-                        score2.setText(" " + p2);
-                        Toast.makeText(this,"winner : " + y, Toast.LENGTH_SHORT).show();
+                        score2.setText("" + p2);
+
+                        if(goal.equals(score2.getText().toString())){
+                            winner(y);
+                        }
                         setNull();
                     }
                 }
@@ -196,6 +252,24 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    private void winner(String po) {
+        AlertDialog.Builder win = new AlertDialog.Builder(this);
+        win.setCancelable(false);
+
+
+        win.setIcon(R.drawable.ic_baseline_local_florist_24);
+        win.setTitle("congrats : " + po);
+
+        win.setPositiveButton("try again", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                startActivity(new Intent(MainActivity.this,Name.class));
+                finish();
+            }
+        });
+        win.show();
+    }
+
     private void setNull() {
         b1.setText("");
         b2.setText("");
@@ -206,5 +280,31 @@ public class MainActivity extends AppCompatActivity {
         b7.setText("");
         b8.setText("");
         b9.setText("");
+    }
+
+    public void onBackPressed() {
+
+        AlertDialog.Builder exit  = new AlertDialog.Builder(this);
+        exit.setCancelable(false);
+
+        exit.setIcon(R.drawable.ic_baseline_exit_to_app_24);
+        exit.setTitle("EXIT");
+        exit.setMessage("are you sure about your decision ?");
+
+        exit.setPositiveButton("exit", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                startActivity(new Intent(MainActivity.this,Name.class));
+                finish();
+            }
+        });
+
+        exit.setNegativeButton("no", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+        exit.show();
     }
 }

@@ -15,11 +15,13 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#000000"
         android:text="logout"
-        android:textColor="#FFFFFF"
+        android:textColor="#00BCD4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/allusers" />
+        app:layout_constraintTop_toBottomOf="@+id/play"
+        app:layout_constraintVertical_bias="0.899" />
 
     <Button
         android:id="@+id/play"
@@ -31,19 +33,6 @@
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/allusers"
-        android:layout_width="121dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="92dp"
-        android:backgroundTint="@color/black"
-        android:text="all users"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/play" />
 
     <Button
         android:id="@+id/contactus"

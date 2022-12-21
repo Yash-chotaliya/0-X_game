@@ -13,22 +13,22 @@
         android:id="@+id/msg"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:hint="  write message here"
-        android:textColorHint="#8A8888"
-        android:textColor="#000000"
+        android:layout_marginTop="200dp"
         android:background="#FFFFFF"
         android:ems="10"
-        android:layout_marginTop="200dp"
         android:gravity="start|top"
-        android:inputType="textMultiLine" />
+        android:hint="  write message here..."
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:textColorHint="#8A8888" />
 
     <Button
         android:id="@+id/send"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:backgroundTint="#00BCD4"
         android:text="send via mail"
-        android:backgroundTint="#F8F8F8"
         android:textColor="#000000"
         app:cornerRadius="50dp" />
 </LinearLayout>

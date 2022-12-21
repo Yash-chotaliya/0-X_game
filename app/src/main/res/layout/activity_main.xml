@@ -26,12 +26,12 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="25dp"
-            android:backgroundTint="#FFFFFF"
+            android:backgroundTint="#57595A"
             android:onClick="Click"
-            android:textColor="#000000"
+            android:textColor="#00BCD4"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:cornerRadius="20dp"></Button>
+            app:cornerRadius="20dp" />
 
         <Button
             android:id="@+id/b2"
@@ -39,12 +39,12 @@
             android:layout_height="80dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="25dp"
-            android:backgroundTint="#FFFFFF"
+            android:backgroundTint="#57595A"
             android:onClick="Click"
-            android:textColor="#000000"
+            android:textColor="#00BCD4"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:cornerRadius="20dp"></Button>
+            app:cornerRadius="20dp" />
 
         <Button
             android:id="@+id/b3"
@@ -52,24 +52,24 @@
             android:layout_height="80dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="25dp"
-            android:backgroundTint="#FFFFFF"
+            android:backgroundTint="#57595A"
             android:onClick="Click"
-            android:textColor="#000000"
+            android:textColor="#00BCD4"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:cornerRadius="20dp"></Button>
+            app:cornerRadius="20dp" />
 
         <Button
             android:id="@+id/b4"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="25dp"
-            android:backgroundTint="#FFFFFF"
+            android:backgroundTint="#57595A"
             android:onClick="Click"
-            android:textColor="#000000"
+            android:textColor="#00BCD4"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:cornerRadius="20dp"></Button>
+            app:cornerRadius="20dp" />
 
         <Button
             android:id="@+id/b5"
@@ -77,12 +77,12 @@
             android:layout_height="80dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="25dp"
-            android:backgroundTint="#FFFFFF"
+            android:backgroundTint="#57595A"
             android:onClick="Click"
-            android:textColor="#000000"
+            android:textColor="#00BCD4"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:cornerRadius="20dp"></Button>
+            app:cornerRadius="20dp" />
 
         <Button
             android:id="@+id/b6"
@@ -90,24 +90,24 @@
             android:layout_height="80dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="25dp"
-            android:backgroundTint="#FFFFFF"
+            android:backgroundTint="#57595A"
             android:onClick="Click"
-            android:textColor="#000000"
+            android:textColor="#00BCD4"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:cornerRadius="20dp"></Button>
+            app:cornerRadius="20dp" />
 
         <Button
             android:id="@+id/b7"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="25dp"
-            android:backgroundTint="#FFFFFF"
+            android:backgroundTint="#57595A"
             android:onClick="Click"
-            android:textColor="#000000"
+            android:textColor="#00BCD4"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:cornerRadius="20dp"></Button>
+            app:cornerRadius="20dp" />
 
         <Button
             android:id="@+id/b8"
@@ -115,12 +115,12 @@
             android:layout_height="80dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="25dp"
-            android:backgroundTint="#FFFFFF"
+            android:backgroundTint="#57595A"
             android:onClick="Click"
-            android:textColor="#000000"
+            android:textColor="#00BCD4"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:cornerRadius="20dp"></Button>
+            app:cornerRadius="20dp" />
 
         <Button
             android:id="@+id/b9"
@@ -128,12 +128,12 @@
             android:layout_height="80dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="25dp"
-            android:backgroundTint="#FFFFFF"
+            android:backgroundTint="#57595A"
             android:onClick="Click"
-            android:textColor="#000000"
+            android:textColor="#00BCD4"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:cornerRadius="20dp"></Button>
+            app:cornerRadius="20dp" />
 
     </GridLayout>
 
@@ -146,7 +146,8 @@
         android:fontFamily="serif-monospace"
         android:gravity="center"
         android:inputType="textLongMessage"
-        android:textColor="#000000"
+        android:textColor="#00BCD4"
+        android:textColorHint="#00BCD4"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -160,7 +161,8 @@
         android:fontFamily="serif-monospace"
         android:gravity="center"
         android:inputType="textLongMessage"
-        android:textColor="#000000"
+        android:textColor="#00BCD4"
+        android:textColorHint="#00BCD4"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -173,7 +175,8 @@
         android:layout_marginTop="40dp"
         android:fontFamily="serif-monospace"
         android:gravity="center"
-        android:textColor="#FFFFFF"
+        android:textColor="#00BCD4"
+        android:textColorHint="#00BCD4"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name1" />
@@ -186,7 +189,8 @@
         android:layout_marginEnd="48dp"
         android:fontFamily="serif-monospace"
         android:gravity="center"
-        android:textColor="#FFFFFF"
+        android:textColor="#00BCD4"
+        android:textColorHint="#00BCD4"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name2" />

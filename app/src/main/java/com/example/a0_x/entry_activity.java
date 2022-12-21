@@ -8,6 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class entry_activity extends AppCompatActivity {
     private Button login;
     private Button register;
@@ -36,5 +39,15 @@ public class entry_activity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if(user!=null){
+            startActivity(new Intent(entry_activity.this,game_options.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK));
+            finish();
+        }
     }
 }
