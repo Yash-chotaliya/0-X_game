@@ -16,7 +16,7 @@ import android.widget.EditText;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class game_options extends AppCompatActivity {
-    private Button play,contactus,logout;
+    private Button play,contactus,logout,allusers;
     @Override
     public void onBackPressed() {
 
@@ -52,6 +52,7 @@ public class game_options extends AppCompatActivity {
         play = findViewById(R.id.play);
         contactus = findViewById(R.id.contactus);
         logout = findViewById(R.id.logout);
+        allusers = findViewById(R.id.allusers);
 
         play.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +67,13 @@ public class game_options extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(game_options.this,contactus_page.class);
                 startActivity(intent);
+            }
+        });
+
+        allusers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(game_options.this,allusers.class));
             }
         });
 

@@ -17,6 +17,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.HashMap;
+
 public class register_page extends AppCompatActivity {
     private Button register,login;
     private EditText email,password,cpassword,username;
@@ -51,9 +53,13 @@ public class register_page extends AppCompatActivity {
                 String p = password.getText().toString();
                 String cp = cpassword.getText().toString();
                 String user = username.getText().toString();
+                HashMap<Object,String> map = new HashMap<>();
 
                 if(!e.isEmpty() && !p.isEmpty() && cp.equals(p) && !user.isEmpty()){
-                    FirebaseDatabase.getInstance().getReference().child("users").push().child("name").setValue(user);
+                    map.put("Username",user);
+                    map.put("Email",e);
+                    map.put("Password",p);
+                    FirebaseDatabase.getInstance().getReference().child("users").push().setValue(map);
                     registeruser(e,p);
                 }
                 else{
