@@ -10,27 +10,13 @@
     tools:context=".game_options">
 
     <Button
-        android:id="@+id/logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#000000"
-        android:text="logout"
-        android:textColor="#00BCD4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/play"
-        app:layout_constraintVertical_bias="0.899" />
-
-    <Button
         android:id="@+id/play"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="92dp"
-        android:layout_marginTop="316dp"
         android:background="@drawable/ic_baseline_play_circle_filled_24"
         android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

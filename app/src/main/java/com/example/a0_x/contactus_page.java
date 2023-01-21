@@ -10,8 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class contactus_page extends AppCompatActivity {
-    private EditText msg;
-    private Button send;
+    EditText msg;
+    Button send;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
