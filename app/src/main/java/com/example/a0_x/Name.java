@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -25,24 +24,22 @@ public class Name extends AppCompatActivity {
         button = findViewById(R.id.button);
         target = findViewById(R.id.target);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String player1 = p1.getText().toString();
-                String player2 = p2.getText().toString();
-                String tar = target.getText().toString();
+        button.setOnClickListener(view -> {
+            String player1 = p1.getText().toString();
+            String player2 = p2.getText().toString();
+            String tar = target.getText().toString();
 
-                if(player1.isEmpty() || player2.isEmpty() || tar.isEmpty()){
-                    Toast.makeText(Name.this, "Enter Name Correctly", Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    Intent intent = new Intent(Name.this, MainActivity.class);
-                    intent.putExtra("player1",player1);
-                    intent.putExtra("player2",player2);
-                    intent.putExtra("tar",tar);
-                    startActivity(intent);
-                    finish();
-                }
+            if(player1.isEmpty() || player2.isEmpty() || tar.isEmpty()){
+                Toast.makeText(Name.this, "Enter Name Correctly", Toast.LENGTH_SHORT).show();
+            }
+            else{
+                Sounds.clicked(view.getContext());
+                Intent intent = new Intent(Name.this, MainActivity.class);
+                intent.putExtra("player1",player1);
+                intent.putExtra("player2",player2);
+                intent.putExtra("tar",tar);
+                startActivity(intent);
+                finish();
             }
         });
 

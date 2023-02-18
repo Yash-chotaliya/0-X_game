@@ -4,7 +4,6 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     int p2=0;
     int set=0;
     int count=0;
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint({"MissingInflatedId", "SetTextI18n"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,8 +51,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @SuppressLint("SetTextI18n")
     public void Click(View view){
         Button current = (Button) view;
+        Sounds.clicked(view.getContext());
         if(current.getText().toString().equals("")) {
             count++;
 
@@ -77,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 s9 = b9.getText().toString();
 
                 if(s1.equals(s2) && s2.equals(s3) && !s1.isEmpty()){
+                    Sounds.point(this);
                     if(count%2!=0){
                         p1++;
                         score1.setText("" + p1);
@@ -102,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 else if(s4.equals(s5) && s5.equals(s6) && !s4.isEmpty()){
+                    Sounds.point(this);
                     if(count%2!=0){
                         p1++;
                         score1.setText("" + p1);
@@ -122,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 else if(s7.equals(s8) && s8.equals(s9) && !s7.isEmpty()){
+                    Sounds.point(this);
                     if(count%2!=0){
                         p1++;
                         score1.setText("" + p1);
@@ -142,6 +146,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 else if(s1.equals(s4) && s4.equals(s7) && !s1.isEmpty()){
+                    Sounds.point(this);
                     if(count%2!=0){
                         p1++;
                         score1.setText("" + p1);
@@ -162,6 +167,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 else if(s2.equals(s5) && s5.equals(s8) && !s2.isEmpty()){
+                    Sounds.point(this);
                     if(count%2!=0){
                         p1++;
                         score1.setText("" + p1);
@@ -182,6 +188,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 else if(s3.equals(s6) && s6.equals(s9) && !s3.isEmpty()){
+                    Sounds.point(this);
                     if(count%2!=0){
                         p1++;
                         score1.setText("" + p1);
@@ -202,6 +209,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 else if(s1.equals(s5) && s5.equals(s9) && !s1.isEmpty()){
+                    Sounds.point(this);
                     if(count%2!=0){
                         p1++;
                         score1.setText("" + p1);
@@ -222,6 +230,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 else if(s3.equals(s5) && s5.equals(s7) && !s3.isEmpty()){
+                    Sounds.point(this);
                     if(count%2!=0){
                         p1++;
                         score1.setText("" + p1);
@@ -255,16 +264,14 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder win = new AlertDialog.Builder(this);
         win.setCancelable(false);
 
+        Sounds.win(this);
 
         win.setIcon(R.drawable.ic_baseline_local_florist_24);
         win.setTitle("congrats : " + po);
 
-        win.setPositiveButton("try again", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                startActivity(new Intent(MainActivity.this,Name.class));
-                finish();
-            }
+        win.setPositiveButton("try again", (dialogInterface, i) -> {
+            startActivity(new Intent(MainActivity.this,Name.class));
+            finish();
         });
         win.show();
     }
@@ -290,19 +297,13 @@ public class MainActivity extends AppCompatActivity {
         exit.setTitle("EXIT");
         exit.setMessage("are you sure about your decision ?");
 
-        exit.setPositiveButton("exit", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                startActivity(new Intent(MainActivity.this,Name.class));
-                finish();
-            }
+        exit.setPositiveButton("exit", (dialogInterface, i) -> {
+            startActivity(new Intent(MainActivity.this,Name.class));
+            finish();
         });
 
-        exit.setNegativeButton("no", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
+        exit.setNegativeButton("no", (dialogInterface, i) -> {
 
-            }
         });
         exit.show();
     }

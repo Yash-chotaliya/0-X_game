@@ -27,6 +27,8 @@ public class Splash extends AppCompatActivity {
         t8 = findViewById(R.id.t8);
         t9 = findViewById(R.id.t9);
 
+        Sounds.splash(this);
+
         Animation animation = AnimationUtils.loadAnimation(this,R.anim.animat);
         Animation animation1 = AnimationUtils.loadAnimation(this,R.anim.animate1);
 
@@ -42,13 +44,10 @@ public class Splash extends AppCompatActivity {
         t9.setAnimation(animation);
 
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(Splash.this,game_options.class);
-                startActivity(intent);
-                finish();
-            }
-        },2500);
+        new Handler().postDelayed(() -> {
+            Intent intent = new Intent(Splash.this,game_options.class);
+            startActivity(intent);
+            finish();
+        },4000);
     }
 }
