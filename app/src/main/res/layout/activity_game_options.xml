@@ -13,7 +13,7 @@
         android:id="@+id/play"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="#070F39"
         android:layout_margin="10dp"
         android:text="play"
         android:textColor="#FFFFFF" />
@@ -24,7 +24,7 @@
         android:layout_margin="10dp"
         android:layout_height="60dp"
         android:text="contact us"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="#070F39"
         android:textColor="#FFFFFF"/>
 
 </LinearLayout>

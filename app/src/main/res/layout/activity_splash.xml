@@ -4,24 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/splash"
     tools:context=".Splash"
     tools:ignore="HardcodedText">
 
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:columnCount="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5"
-        app:columnCount="3">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/t1"
-            android:width="100dp"
+            android:width="90dp"
             android:height="70dp"
             android:fontFamily="casual"
             android:gravity="center"
@@ -31,7 +30,7 @@
 
         <TextView
             android:id="@+id/t2"
-            android:width="100dp"
+            android:width="90dp"
             android:height="70dp"
             android:fontFamily="casual"
             android:gravity="center"
@@ -41,7 +40,7 @@
 
         <TextView
             android:id="@+id/t3"
-            android:width="100dp"
+            android:width="90dp"
             android:height="70dp"
             android:fontFamily="casual"
             android:gravity="center"
@@ -51,7 +50,7 @@
 
         <TextView
             android:id="@+id/t4"
-            android:width="100dp"
+            android:width="90dp"
             android:height="70dp"
             android:fontFamily="casual"
             android:gravity="center"
@@ -61,7 +60,7 @@
 
         <TextView
             android:id="@+id/t5"
-            android:width="100dp"
+            android:width="90dp"
             android:height="70dp"
             android:fontFamily="casual"
             android:gravity="center"
@@ -71,7 +70,7 @@
 
         <TextView
             android:id="@+id/t6"
-            android:width="100dp"
+            android:width="90dp"
             android:height="70dp"
             android:fontFamily="casual"
             android:gravity="center"
@@ -81,7 +80,7 @@
 
         <TextView
             android:id="@+id/t7"
-            android:width="100dp"
+            android:width="90dp"
             android:height="70dp"
             android:fontFamily="casual"
             android:gravity="center"
@@ -91,7 +90,7 @@
 
         <TextView
             android:id="@+id/t8"
-            android:width="100dp"
+            android:width="90dp"
             android:height="70dp"
             android:fontFamily="casual"
             android:gravity="center"
@@ -101,7 +100,7 @@
 
         <TextView
             android:id="@+id/t9"
-            android:width="100dp"
+            android:width="90dp"
             android:height="70dp"
             android:fontFamily="casual"
             android:gravity="center"
