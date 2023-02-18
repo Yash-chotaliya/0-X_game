@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    tools:context=".Splash">
+    android:background="@drawable/background"
+    tools:context=".Splash"
+    tools:ignore="HardcodedText">
 
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="wrap_content"

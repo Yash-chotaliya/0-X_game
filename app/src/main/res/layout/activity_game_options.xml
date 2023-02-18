@@ -1,33 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="@drawable/background"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".game_options">
+    tools:context=".game_options"
+    tools:ignore="HardcodedText">
 
     <Button
         android:id="@+id/play"
-        android:layout_width="60dp"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:layout_marginStart="92dp"
-        android:background="@drawable/ic_baseline_play_circle_filled_24"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:backgroundTint="@color/black"
+        android:layout_margin="10dp"
+        android:text="play"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/contactus"
-        android:layout_width="60dp"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
         android:layout_height="60dp"
-        android:layout_marginEnd="96dp"
-        android:background="@drawable/ic_baseline_contact_support_24"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/play" />
+        android:text="contact us"
+        android:backgroundTint="@color/black"
+        android:textColor="#FFFFFF"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
