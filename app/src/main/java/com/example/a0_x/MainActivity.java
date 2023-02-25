@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     public void Click(View view){
         Button current = (Button) view;
-        Sounds.clicked(view.getContext());
         if(current.getText().toString().equals("")) {
             count++;
 
